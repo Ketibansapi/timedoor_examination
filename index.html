@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Mario's Pizzeria</title>
+		<title>Timedoor Pizza</title>
 		<meta charset="utf-8">
 		<meta content="width=device-width,initial-scale=1.0" name="viewport">
 		<link rel="stylesheet" href="./css/style.css">
@@ -18,6 +18,8 @@
 			</div>
 		</header>
 		<!-- /HEADER -->
+
+		
 		
 		<!-- MENU BODY -->
 		<section class="container">
@@ -25,42 +27,53 @@
 				<h1></h1>
 				<form id="form">
 					<div class="menu-item">
+						<h3>Pizza:</h3>
+						<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce" checked> Pizza_name1 - $8.00
+						<br>
+						<input class="sauce" type="radio" name="Sauce" value="White Sauce"> Pizza_name2 - $10.00
+						<br>
+						<input class="sauce" type="radio" name="Sauce" value="Barbecue Sauce"> Pizza_name3 - $12.00
+					</div>
+					<div class="menu-item">
 						<h3>Size:</h3>
-						<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal - $6.00*
+						<input class="size" type="radio" name="Size" value="Personal Pizza"> Small - $6.00*
 						<br>
 						<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium - $10.00*
 						<br>
 						<input class="size" type="radio" name="Size" value="Large Pizza" checked> Large - $14.00*
 						<br>
-						<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large - $16.00*
-						<br>
-						<p>* = Base price before ingredients</p>
+						<!-- <input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large - $16.00*
+						<br> -->
+						<!-- <p>* = Base price before ingredients</p> -->
 					</div>
 					<div class="menu-item">
-						<h3>Crust:</h3>
-						<input class="crust" type="radio" name="Crust" value="Plain Crust" checked> Plain
+						<h3>Toppings:</h3>
+						<input class="crust" type="radio" name="Crust" value="Plain Crust" checked> Avocado
 						<br>
-						<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy
+						<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Broccoli
 						<br>
-						<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special
+						<input class="crust" type="radio" name="Crust" value="House Special Crust"> Onions
 						<br>
-						<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter
+						<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Zucchini
 						<br>
-						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed*
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Lobster
 						<br>
-						<p>* = Add $3.00 for any size pizza</p>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Oyster
+						<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Salmon
+						<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Tuna
+						<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Bacon
+						<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Duck
+						<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Ham
+						<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Sausage
+						<br>
 					</div>
-					<div class="menu-item">
-						<h3>Sauce:</h3>
-						<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce" checked> Marinara
-						<br>
-						<input class="sauce" type="radio" name="Sauce" value="White Sauce"> White
-						<br>
-						<input class="sauce" type="radio" name="Sauce" value="Barbecue Sauce"> Barbecue
-						<br>
-						<input class="sauce" type="radio" name="Sauce" value="No Sauce"> No Sauce
-					</div>
-					<div class="menu-item">
+					<!-- <div class="menu-item">
 						<h3>Cheese:</h3>
 						<input class="cheese" type="radio" name="Cheese" value="Regular Cheese" checked> Regular
 						<br>
@@ -105,16 +118,16 @@
 						<input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple
 						<br>
 						<p>* = Add $1.00 for each<br>veggie item after the first</p>
-					</div>
+					</div> -->
 				</form>
 				<br>
 				<div class="controls">
 					<div class="button" onclick="getReceipt()">
 						<p>Place Order</p>
 					</div>
-					<div class="button" onclick="clearAll()">
+					<!-- <div class="button" onclick="clearAll()">
 						<p>Cancel</p>
-					</div>
+					</div> -->
 				</div>
 				<div id="cart">
 					<div id="head1">
