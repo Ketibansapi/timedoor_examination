@@ -2,28 +2,28 @@ function getReceipt() {
 	text1 = "";
 	text2 = "";
 	var runningTotal = 0;
-	var sizeTotal = 0;
-	var sizeArray = document.getElementsByClassName("size");
-	for (var i = 0; i < sizeArray.length; i++) {
-		if (sizeArray[i].checked) {
-			var selectedSize = sizeArray[i].value;
-			text1 = text1+selectedSize+"<br>";
+	var pizzaTotal = 0;
+	var pizzaArray = document.getElementsByClassName("pizza");
+	for (var i = 0; i < pizzaArray.length; i++) {
+		if (pizzaArray[i].checked) {
+			var selectedPizza = pizzaArray[i].value;
+			text1 = text1+selectedPizza+"<br>";
 		}
 	}
-	if (selectedSize === "Personal Pizza") {
-		sizeTotal = 8;
-		text2 = text2+sizeTotal+"<br>";
-	} else if (selectedSize === "Medium Pizza") {
-		sizeTotal = 10;
-		text2 = text2+sizeTotal+"<br>";
-	} else if (selectedSize === "Large Pizza") {
-		sizeTotal = 12;
-		text2 = text2+sizeTotal+"<br>";
-	} else if (selectedSize === "Extra Large Pizza") {
-		sizeTotal = 16;
-		text2 = text2+sizeTotal+"<br>";
+	if (selectedPizza === "Pizzaname1") {
+		pizzaTotal = 8;
+		text2 = text2+pizzaTotal+"<br>";
+	} else if (selectedPizza === "Pizzaname2") {
+		pizzaTotal = 10;
+		text2 = text2+pizzaTotal+"<br>";
+	} else if (selectedPizza === "Pizzaname3") {
+		pizzaTotal = 12;
+		text2 = text2+pizzaTotal+"<br>";
+	} else if (selectedPizza === "Extra Large Pizza") {
+		pizzaTotal = 16;
+		text2 = text2+pizzaTotal+"<br>";
 	}
-	runningTotal = sizeTotal;
+	runningTotal = pizzaTotal;
 	getCrust(runningTotal,text1,text2);
 };
 
