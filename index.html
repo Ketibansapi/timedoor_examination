@@ -12,16 +12,14 @@
 			<div class="container">
 			</div>
 		</header>	
-
-		<section class="container">
 			<div id="menu-all">
 				<h1></h1>
 				<form id="form">
 					<div class="menu-item">
 						<h3 style="font-family:helvetica; font-size: 25px;">Pizza:</h3>
-						<input class="pizza" type="radio" name="Pizza" value="Pizzaname1"> Pizza_name1 - $8.00
-						<input class="pizza" type="radio" name="Pizza" value="Pizzaname2"> Pizza_name2 - $10.00
-						<input class="pizza" type="radio" name="Pizza" value="Pizzaname3" > Pizza_name3 - $12.00
+						<input id="myBtn" onclick="myFunction()" class="pizza" type="radio" name="Pizza" value="Pizzaname1"> Pizza_name1 - $8.00
+						<input id="myBtn2" onclick="myFunction2()" class="pizza" type="radio" name="Pizza" value="Pizzaname2"> Pizza_name2 - $10.00
+						<input id="myBtn3" onclick="myFunction3()" class="pizza" type="radio" name="Pizza" value="Pizzaname3" > Pizza_name3 - $12.00
 						<br>
 					</div>
 					<div class="menu-item">
@@ -32,21 +30,21 @@
 					</div>
 					<div class="menu-item">
 						<h3 style="font-family:helvetica; font-size: 25px;">Toppings:</h3>
-						<input class="toppings" type="checkbox" name="Toppings" value="Avocado Topping"> Avocado
-						<input class="broccoli" type="checkbox" name="Broccoli" style=margin-left:5px; value="Broccoli Topping"> Broccoli
-						<input class="onions" type="checkbox" name="Onions" value="Onions Topping"> Onions
+						<input class="toppings" id="avocado" type="checkbox" name="Toppings" value="Avocado Topping"> Avocado
+						<input class="broccoli" type="checkbox" name="Broccoli" style=margin-left:5px;  value="Broccoli Topping"> Broccoli
+						<input class="onions" type="checkbox" name="Onions" value="Onions Topping" > Onions
 						<br>
-						<input class="zucchini" type="checkbox" name="Zucchini" value="Zucchini Topping"> Zucchini
-						<input class="lobster" type="checkbox" name="Lobster" value="Lobster Topping"> Lobster
-						<input class="oyster" type="checkbox" name="Oyster" style=margin-left:9.8px; value="Oyster Topping"> Oyster
+						<input class="zucchini" type="checkbox" name="Zucchini" value="Zucchini Topping" > Zucchini
+						<input class="lobster" id="lobster" type="checkbox" name="Lobster" value="Lobster Topping" > Lobster
+						<input class="oyster" id="oyster" type="checkbox" name="Oyster" style=margin-left:9.8px;  value="Oyster Topping"> Oyster
 						<br>
-						<input class="salmon" type="checkbox" name="Salmon" value="Salmon Topping"> Salmon
-						<input class="tuna" type="checkbox" name="Tuna" style=margin-left:12px; value="Tuna Topping"> Tuna
-						<input class="bacon" type="checkbox" style=margin-left:27px; name="Bacon" value="Bacon Topping"> Bacon
+						<input class="salmon" type="checkbox" id="salmon" name="Salmon" value="Salmon Topping"> Salmon
+						<input class="tuna" type="checkbox" id="tuna" name="Tuna" style=margin-left:12px; value="Tuna Topping"> Tuna
+						<input class="bacon" type="checkbox" id="bacon" style=margin-left:27px; name="Bacon" value="Bacon Topping"> Bacon
 						<br>
-						<input class="duck" type="checkbox" name="Duck" value="Duck Topping"> Duck
+						<input class="duck" id="duck" type="checkbox" name="Duck" value="Duck Topping"> Duck
 						<input class="ham" type="checkbox" name="Ham" style=margin-left:26px; value="Ham Topping"> Ham
-						<input class="sausage" type="checkbox" name="Sausage" style=margin-left:27.8px; value="Sausage Topping"> Sausage
+						<input class="sausage" id="sausage" type="checkbox" name="Sausage" style=margin-left:27.8px; value="Sausage Topping"> Sausage
 						<br>
 					</div>
 				</form>
@@ -71,8 +69,8 @@
 					<div id="totalPrice2"></div>
 				</div>
 			</div>
-		</section>
-		<script type="text/javascript" src="./js/script.js"></script>
 		
+		<script type="text/javascript" src="./js/script.js">
+		</script>
 	</body>
 </html>

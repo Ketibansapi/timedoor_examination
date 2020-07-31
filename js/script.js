@@ -1,3 +1,24 @@
+function myFunction() {
+	document.getElementById("lobster").disabled = true;
+	document.getElementById("oyster").disabled = true;
+	document.getElementById("salmon").disabled = true;
+	document.getElementById("bacon").disabled = true;
+	document.getElementById("duck").disabled = true;
+	document.getElementById("sausage").disabled = true;
+  }
+  function myFunction2() {
+	document.getElementById("avocado").disabled = true;
+	document.getElementById("tuna").disabled = true;
+	document.getElementById("duck").disabled = true;
+	document.getElementById("sausage").disabled = true;
+  }
+  function myFunction3() {
+	document.getElementById("avocado").disabled = true;
+	document.getElementById("lobster").disabled = true;
+	document.getElementById("oyster").disabled = true;
+	document.getElementById("salmon").disabled = true;
+  }
+
 function getReceipt() {
 	text1 = "";
 	text2 = "";
@@ -13,9 +34,12 @@ function getReceipt() {
 	if (selectedPizza === "Pizzaname1") {
 		pizzaTotal = 8;
 		text2 = text2+pizzaTotal+"<br>";
+		getLobster('disabled');
+
 	} else if (selectedPizza === "Pizzaname2") {
 		pizzaTotal = 10;
 		text2 = text2+pizzaTotal+"<br>";
+
 	} else if (selectedPizza === "Pizzaname3") {
 		pizzaTotal = 12;
 		text2 = text2+pizzaTotal+"<br>";
