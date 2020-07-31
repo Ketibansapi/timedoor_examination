@@ -1,108 +1,4 @@
-head {
-    display: none;
-}
 
-body {
-	display: block;
-	margin: 0;
-	font-size: 16px;
-	font-family: "Helvetica", Times, serif;
-	background: url(../img/white.jpg) no-repeat center fixed;
-}
-
-h1 {
-	font-weight: 900;
-	font-size: 30px;
-	font-variant: small-caps;
-	margin-top: 10px;
-	margin-bottom: 0px;
-	text-align: center;
-	color: rgb(14, 1, 1);
-	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-}
-
-h1::after {  /* This is the underline */
-	display: block;
-	content: "";
-	height: 2px;
-	width: 115px;
-	background: #fff;
-	margin: 5px auto 25px;
-	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
-}
-
-.container {
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/*=======================================
-  TITLE STYLES
-  =======================================*/
-header {
-	width: 100%;
-	height: auto;
-	display: block;
-	color: rgb(19, 14, 14);
-}
-
-.head-main {
-	font-variant: small-caps;
-	letter-spacing: 5pt;
-	word-spacing: 21pt;
-	font-size: 3.5em;
-	text-align: left;
-	line-height: 2;
-    font-weight: 900;
-    border: 5px double rgb(8, 8, 8);
-    padding: 10px;
-}
-
-/*=======================================
-  MENU STYLES
-  =======================================*/
-
-#menu-all {
-	width: 650px;
-	margin: 0% auto;
-	padding: 1px 0px;
-}
-
-#form {
-	margin: 0% auto;
-	width: 600px;
-	border-radius: 25px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: stretch;
-}
-
-.menu-item {
-	flex: 1 150px;
-	min-width: 0;
-	border: 3px solid #fff;
-	box-shadow: 0 0 0 2px rgba(0,0,0, .3);
-    padding: 0 0 10px 0;
-	margin: 3px;
-	border-radius: 1px;
-	background-color: rgba(234, 235, 237, 0.9);
-}
-
-.menu-item>h3 {
-	color: #fff;
-	padding: 0 0 0 60px;
-	margin: 0 auto;
-	background-color: rgba(240, 31, 20, .8);
-	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
-}
 
 /*=======================================
   BUTTON STYLES
@@ -125,7 +21,7 @@ header {
 	width: 100%;
 	display: block;
 	text-decoration: none;
-	background-color: rgba(42, 76, 132, .9);
+	background-color: rgba(48, 52, 59, 0.9);
 	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
 	border-radius: 1px;
 	margin: 1% 3px;
@@ -218,21 +114,4 @@ header {
 	padding: 20px 0 10px 10px;
 	width: 250px;
 	border-radius: 0 0 0 0;
-}
-
-/*=======================================
-  FOOTER STYLES
-  =======================================*/
-footer {
-	margin-top: 1.5rem;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 1rem;
-	color: #000;
-	background-color: rgba(255, 255, 255,.8);
-	text-align: center;
-	font-size: 17px;
-	border-top: 3px solid #fff;
-	box-shadow: 0 0 0 2px rgba(0,0,0, .3);
 }
