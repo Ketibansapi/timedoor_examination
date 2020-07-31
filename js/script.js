@@ -42,16 +42,16 @@ function getCrust(runningTotal,text1,text2) {
 	}
 	runningTotal = (runningTotal + crustTotal);
 	text2 = text2 + crustTotal + "<br>";
-	getSauce(runningTotal,text1,text2);
+	getItemSize(runningTotal,text1,text2);
 };
 
-function getSauce(runningTotal,text1,text2) {
-	var selectedSauce;
-	var sauceArray = document.getElementsByClassName("sauce");
-	for (var j = 0; j < sauceArray.length; j++) {
-		if (sauceArray[j].checked) {
-			selectedSauce = sauceArray[j].value;
-			text1 = text1 + selectedSauce + "<br>";
+function getItemSize(runningTotal,text1,text2) {
+	var selectedItemSize;
+	var itemSizeArray = document.getElementsByClassName("itemSize");
+	for (var j = 0; j < itemSizeArray.length; j++) {
+		if (itemSizeArray[j].checked) {
+			selectedItemSize = itemSizeArray[j].value;
+			text1 = text1 + selectedItemSize + "<br>";
 		}
 	}
 	text2 = text2 + 0 + "<br>";
