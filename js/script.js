@@ -253,56 +253,6 @@ function getItemSize(runningTotal,text1,text2) {
 		}
 	}
 	text2 = text2 + 0 + "<br>";
-	getCheese(runningTotal,text1,text2);
-};
-
-function getCheese(runningTotal,text1,text2) {
-	var cheeseTotal = 0;
-	var selectedCheese;
-	var cheeseArray = document.getElementsByClassName("cheese");
-	for (var j = 0; j < cheeseArray.length; j++) {
-		if (cheeseArray[j].checked) {
-			selectedCheese = cheeseArray[j].value;
-			text1 = text1 + selectedCheese + "<br>";
-		}
-		if (selectedCheese === "Extra Cheese") {
-			cheeseTotal = 3;
-		}
-	}
-	runningTotal = (runningTotal + cheeseTotal);
-	text2 = text2 + cheeseTotal + "<br>";
-	getTopping(runningTotal,text1,text2);
-};
-
-function getTopping(runningTotal,text1,text2) {
-	var toppingTotal = 0;
-	var selectedTopping = [];
-	var toppingArray = document.getElementsByClassName("topping");
-	for (var j = 0; j < toppingArray.length; j++) {
-		if (toppingArray[j].checked) {
-			selectedTopping.push(toppingArray[j].value);
-		}
-	}
-	var toppingCount = selectedTopping.length;
-	if (toppingCount > 1) {
-		toppingTotal = (toppingCount - 1);
-	} else {
-		toppingTotal = 0;
-	}
-	runningTotal = (runningTotal + toppingTotal);
-	for (var j = 0; j < selectedTopping.length; j++) {
-		text1 = text1+selectedTopping[j]+"<br>";
-		if (toppingCount <= 1) {
-				text2 = text2 + 0 + "<br>";
-				toppingCount = toppingCount - 1;
-			} else if (toppingCount == 2) {
-				text2 = text2 + 1 + "<br>";
-				toppingCount = toppingCount - 1;
-			} else {
-				text2 = text2 + 1 + "<br>";
-				toppingCount = toppingCount - 1;
-			}
-	}
 	getVeggie(runningTotal,text1,text2);
 };
 
@@ -339,9 +289,4 @@ function getVeggie(runningTotal,text1,text2) {
 	document.getElementById("showText1").innerHTML=text1;
 	document.getElementById("showText2").innerHTML=text2;
 	document.getElementById("totalPrice2").innerHTML = "</h3>$"+runningTotal+".00"+"</h3>";
-};
-
-function clearAll() {
-	document.getElementById("form").reset();
-	document.getElementById("cart").style.opacity=0;
 };
