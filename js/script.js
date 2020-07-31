@@ -1,21 +1,43 @@
-function myFunction() {
+function disabledToppings1() {
 	document.getElementById("lobster").disabled = true;
+	// document.getElementById("avocado").disabled = false;
+	// document.getElementById("broccoli").disabled = false;
+	// document.getElementById("onions").disabled = false;
+	// document.getElementById("zucchini").disabled = false;
+	// document.getElementById("tuna").disabled = false;
+	// document.getElementById("ham").disabled = false;
 	document.getElementById("oyster").disabled = true;
 	document.getElementById("salmon").disabled = true;
 	document.getElementById("bacon").disabled = true;
 	document.getElementById("duck").disabled = true;
 	document.getElementById("sausage").disabled = true;
   }
-  function myFunction2() {
+  function disabledToppings2() {
 	document.getElementById("avocado").disabled = true;
+	// document.getElementById("lobster").disabled = false;
+	// document.getElementById("broccoli").disabled = false;
+	// document.getElementById("onions").disabled = false;
+	// document.getElementById("zucchini").disabled = false;
 	document.getElementById("tuna").disabled = true;
+	// document.getElementById("ham").disabled = false;
+	// document.getElementById("bacon").disabled = false;
+	// document.getElementById("salmon").disabled = false;
+	// document.getElementById("oyster").disabled = false;
 	document.getElementById("duck").disabled = true;
 	document.getElementById("sausage").disabled = true;
   }
-  function myFunction3() {
+  function disabledToppings3() {
 	document.getElementById("avocado").disabled = true;
+	// document.getElementById("broccoli").disabled = false;
+	// document.getElementById("zucchini").disabled = false;
+	// document.getElementById("onions").disabled = false;
 	document.getElementById("lobster").disabled = true;
+	// document.getElementById("duck").disabled = false;
+	// document.getElementById("ham").disabled = false;
+	// document.getElementById("sausage").disabled = false;
+	// document.getElementById("tuna").disabled = false;
 	document.getElementById("oyster").disabled = true;
+	// document.getElementById("bacon").disabled = false;
 	document.getElementById("salmon").disabled = true;
   }
 
