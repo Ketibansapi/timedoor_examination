@@ -11,13 +11,13 @@ function getReceipt() {
 		}
 	}
 	if (selectedSize === "Personal Pizza") {
-		sizeTotal = 6;
+		sizeTotal = 8;
 		text2 = text2+sizeTotal+"<br>";
 	} else if (selectedSize === "Medium Pizza") {
 		sizeTotal = 10;
 		text2 = text2+sizeTotal+"<br>";
 	} else if (selectedSize === "Large Pizza") {
-		sizeTotal = 14;
+		sizeTotal = 12;
 		text2 = text2+sizeTotal+"<br>";
 	} else if (selectedSize === "Extra Large Pizza") {
 		sizeTotal = 16;
