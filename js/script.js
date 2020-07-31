@@ -36,7 +36,40 @@ function getToppings(runningTotal,text1,text2) {
 			selectedToppings = toppingsArray[j].value;
 			text1 = text1 + selectedToppings + "<br>";
 		}
-		if (selectedToppings === "Cheese Stuffed Crust") {
+		if (selectedToppings === "Avocado Topping") {
+			toppingsTotal = 1;
+		}
+		if (selectedToppings === "Broccoli Topping") {
+			toppingsTotal = 1;
+		}
+		if (selectedToppings === "Onions Topping") {
+			toppingsTotal = 1;
+		}
+		if (selectedToppings === "Zucchini Topping") {
+			toppingsTotal = 1;
+		}
+		if (selectedToppings === "Lobster Topping") {
+			toppingsTotal = 2;
+		}
+		if (selectedToppings === "Oyster Topping") {
+			toppingsTotal = 2;
+		}
+		if (selectedToppings === "Salmon Topping") {
+			toppingsTotal = 2;
+		}
+		if (selectedToppings === "Tuna Topping") {
+			toppingsTotal = 2;
+		}
+		if (selectedToppings === "Bacon Topping") {
+			toppingsTotal = 3;
+		}
+		if (selectedToppings === "Duck Topping") {
+			toppingsTotal = 3;
+		}
+		if (selectedToppings === "Ham Topping") {
+			toppingsTotal = 3;
+		}
+		if (selectedToppings === "Sausage Topping") {
 			toppingsTotal = 3;
 		}
 	}
